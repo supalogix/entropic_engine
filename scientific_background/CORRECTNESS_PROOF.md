@@ -2,10 +2,13 @@
 
 ## Overview
 
-Ensuring the correctness of the Turing machine in the Entropic Engine is essential for accurate physics simulations. This document outlines our verification approach using both theoretical proofs and formal tools:
-- **Coq** for mathematically rigorous correctness proofs.
-- **TLA+** for verifying real-world execution traces and practical correctness.
-- **NuSMV 2** for modal logic-based verification of reachability, halting, and necessity/possibility constraints using symbolic model checking.
+We ensure the accuracy of our simulation by rigorously verifying our Turing machine’s behavior using formal methods. In brief:
+
+- **Coq** provides interactive, mathematical proofs to establish logical consistency and termination.
+- **TLA+** models state transitions over time, ensuring every execution path follows our specifications.
+- **NuSMV 2** employs temporal logic to verify reachability, halting, and safety properties.
+
+This multi-method approach gives us high confidence in the correctness of our simulation framework.
 
 
 ---
