@@ -43,7 +43,7 @@ In Stephen Wolfram’s vision, the grid evolves so that objects seem to change f
 
 Similarly, an object’s apparent disappearance is not due to the cell ceasing to exist. Instead, visibility is an emergent property: an object is visible only when a cell contains energy in the appropriate configuration. When a cell seems to “lose” an object, it is merely in a low-energy state that fails to manifest that object. The cell remains, faithfully obeying conservation laws, while the energy rearrangement creates the illusion of vanishing.
 
-Thus, by synthesizing these perspectives, we resolve the apparent paradox. The cellular automaton’s fundamental rules ensure that energy is conserved at every level—even since the emergent phenomena of mass and visibility arise from the continuous, rule-governed transfer of energy. 
+Thus, by synthesizing these perspectives, we resolve the apparent paradox: the cellular automaton’s fundamental rules ensure that energy is conserved at every level.
 
 ---
 
