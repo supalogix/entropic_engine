@@ -38,35 +38,26 @@ Although our current focus is on the solar system, our approach can be generaliz
 
 Each celestial body follows these principles:
 
-### 1. Defining Celestial Bodies as Turing Machines
+1. **Defining Celestial Bodies as Turing Machines**
+   - Each body maintains a state with position, momentum, total energy, and a vector clock to track causal consistency.
+   - Motion is governed by energy conservation and Hamiltonian constraints.
 
- - Each body maintains a state with position, momentum, total energy, and a vector clock to track causal consistency.
+2. **Using the Shared Tape to Simulate Gravity**
+   - The Sun writes gravitational potential data, which planets read to determine acceleration.
+   - Planets adjust kinetic and potential energy to ensure conservation, producing natural orbits.
 
- - Motion is governed by energy conservation and Hamiltonian constraints.
+3. **Orbital Motion Without Explicit Time**
+   - Instead of discrete time steps, planets check for valid gravitational interactions before updating states.
+   - Each body processes updates only when causally consistent based on light-speed constraints.
 
-### 2. Using the Shared Tape to Simulate Gravity
+4. **Multi-Body Interactions**
+   - Planets read gravitational influence from others, leading to emergent orbital perturbations.
+   - Close encounters result in natural momentum exchanges, preserving angular momentum.
 
- - The Sun writes gravitational potential data, which planets read to determine acceleration.
+5. **Incorporating Relativistic Effects**
+   - Light-speed delays ensure gravitational influence propagates at finite speed.
+   - Time dilation emerges naturally as fast-moving bodies experience fewer state transitions.
 
- - Planets adjust kinetic and potential energy to ensure conservation, producing natural orbits.
-
-### 3. Orbital Motion Without Explicit Time
-
- - Instead of discrete time steps, planets check for valid gravitational interactions before updating states.
-
- - Each body processes updates only when causally consistent based on light-speed constraints.
-
-### 4. Multi-Body Interactions
-
- - Planets read gravitational influence from others, leading to emergent orbital perturbations.
-
- - Close encounters result in natural momentum exchanges, preserving angular momentum.
-
-### 5. Incorporating Relativistic Effects
-
- - Light-speed delays ensure gravitational influence propagates at finite speed.
-
- - Time dilation emerges naturally as fast-moving bodies experience fewer state transitions.
 ---
 
 ## Proving the Correctness of Entropic Engine
