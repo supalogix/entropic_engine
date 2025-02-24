@@ -74,7 +74,7 @@ Together these tools form a comprehensive verification framework.
 - The formal specification language (TLA+) provides a clear blueprint of the system’s state transitions. 
 - Modal logic (NuSVM 2) guarantees that the behavior over time remains consistent. 
 
-By combining these methods, we rigorously ensure that our simulation accurately reflects the intended behavior of our Turing machine.
+By combining these methods, we rigorously ensure that our Turing Machine accurately reflects the intended physics behavior.
 
 ---
 
