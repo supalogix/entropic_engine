@@ -1,6 +1,8 @@
 # Entropic Engine: A Finite State Physics Simulator
 
-An experimental, open source project that simulates physics on a manifold using an agent-based, energy-driven finite state automata. Inspired by Conway’s Game of Life, this simulator replaces conventional methods with a Turing machine–style approach where **everything is energy**.
+An experimental, open source project that simulates physics on a manifold using agent-based, energy-driven finite state automata. This simulator replaces conventional methods with a Turing machine–style approach.
+
+Inspired by alternative approaches to conventional physics, our project draws motivation from ideas like Stephen Wolfram’s proposal that the universe can be described as a sufficiently complex cellular automaton. In this view, there exists a maximum speed—one cell per iteration—with objects changing form or vanishing and challenging traditional conservation laws. This unconventional perspective inspires our simulation framework, where **everything is energy**.
 
 ---
 
@@ -16,12 +18,25 @@ In our model, the entire universe is reduced to energy interactions:
 - **Curvature & Gravity**: These localized energy states influence the curvature of the manifold through an analogue of the energy–stress tensor, in line with Einstein’s field equations. In effect, energy tells the simulated spacetime how to curve, and the curved state space determines the "paths" (or state transitions) taken by the system.
 - **Emergent Time**: There is no external clock. Instead, time emerges as the natural result of energy-driven state transitions. When energy is confined (as in a particle at rest), its only option is to "move" through time.
 
+---
+
+## Theoretical Foundations
+
+One proposal, originally suggested by Stephen Wolfram, envisions physics as emerging from a sufficiently complex cellular automaton. In this model, each iteration represents a fundamental tick of time, and movement is naturally capped at one cell per iteration. While this inherently sets a maximum speed, it also implies that the traditional concept of an "object" becomes fuzzy—cells can morph, merge, or vanish over time, making it challenging to directly apply conventional conservation laws.
+
+To address this issue, we turn to Noether’s theorem, which establishes that conservation laws in inertial frames are a direct consequence of the underlying symmetries in the Lagrangian formulation of a system. The key idea is that if a system’s Lagrangian remains invariant under certain continuous transformations (such as time or space translations), then a corresponding quantity (like energy or momentum) is conserved.
+
+Our approach attempts to reconcile these two viewpoints by treating each cell in the automaton as if it were its own inertial reference frame. By doing so, we aim to apply Noether’s theorem on a granular scale. This framework suggests that even though objects might not be well-defined in the conventional sense within a cellular automaton, the fundamental symmetries—and hence the conservation laws—can still manifest at the cellular level.
 
 ---
 
 ## Turing Machine-Based Simulation of a Solar System
 
-We model celestial bodies as Turing machines that interact through a shared tape, encoding gravitational interactions as state transitions instead of explicit force calculations. Each celestial body follows these principles:
+We model solar system dynamics by representing celestial bodies as Turing machines interacting on a shared tape—encoding where orbital parameters and gravitational interactions are modeled as state transitions rather than explicit force calculations.
+ 
+Although our current focus is on the solar system, our approach can be generalized to broader astrophysical scenarios in the future.
+
+Each celestial body follows these principles:
 
 ### 1. Defining Celestial Bodies as Turing Machines
 
@@ -52,6 +67,18 @@ We model celestial bodies as Turing machines that interact through a shared tape
  - Light-speed delays ensure gravitational influence propagates at finite speed.
 
  - Time dilation emerges naturally as fast-moving bodies experience fewer state transitions.
+---
+
+## Proving the Correctness of Entropic Engine
+
+We ensure the accuracy of our simulation by rigorously verifying our Turing machine’s behavior using formal methods. In brief:
+
+- **Coq** provides interactive, mathematical proofs to establish logical consistency and termination.
+- **TLA+** models state transitions over time, ensuring every execution path follows our specifications.
+- **NuSMV 2** employs temporal logic to verify reachability, halting, and safety properties.
+
+This multi-method approach gives us high confidence in the correctness of our simulation framework.
+
 ---
 
 ## Least Action-Based Turing Machine with Rebound
