@@ -78,7 +78,12 @@ Imagine our simulation as a feature film about a Turing machine. We ensure its a
 
 - **Modal Logic (NuSVM 2)**: NuSVM 2 uses modal logic to verify the temporal aspects of our simulation. Modal logic extends classical logic to reason about time, possibility, and necessity. Imagine this tool as the film’s timekeeper and editor, ensuring that the timing, pacing, and sequence of events maintain a coherent and accurate flow over the entire runtime.
 
-Together these tools form a comprehensive verification framework. The theorem prover (Coq) confirms that the internal logic is sound. The formal specification language (TLA+) provides a clear blueprint of the system’s state transitions. Modal logic (NuSVM 2) guarantees that the behavior over time remains consistent. By combining these methods, we rigorously ensure that our simulation accurately reflects the intended behavior of our Turing machine.
+Together these tools form a comprehensive verification framework. 
+- The theorem prover (Coq) confirms that the internal logic is sound. 
+- The formal specification language (TLA+) provides a clear blueprint of the system’s state transitions. 
+- Modal logic (NuSVM 2) guarantees that the behavior over time remains consistent. 
+
+By combining these methods, we rigorously ensure that our simulation accurately reflects the intended behavior of our Turing machine.
 
 ---
 
