@@ -95,7 +95,7 @@ For targeted performance improvements, we integrate inline assembly into critica
 
 Before developing this project, a review of existing computational models for simulating general relativity and the Einstein Field Equations was conducted. The following methods have been explored in the literature:
 
-**Numerical Relativity**: Uses numerical methods to solve Einstein’s Field Equations, particularly for dynamic systems like black hole mergers.
+**Numerical Methods**
 
  - Introduction to Numerical Relativity (https://arxiv.org/pdf/2008.12931)
  - Numerical Relativity as a New Tool for Fundamental Cosmology (https://arxiv.org/pdf/2201.03752)
@@ -103,7 +103,7 @@ Before developing this project, a review of existing computational models for si
  - Numerical Relativity with Arbitrary Precision Arithmetic: Applications to Gravitational Collapse (https://arxiv.org/pdf/1803.00858)
  - Part III Gravitational Waves and Numerical Relativity(https://www.damtp.cam.ac.uk/user/us248/Lectures/Notes/gwnr.pdf)
 
-**Finite Element Methods (FEM)**: Allows solving EFE with complex boundary conditions and geometries.
+**Finite Element Methods (FEM)**
 
 - Finite Element Methods for the Einstein Field Equations. (https://arxiv.org/pdf/2310.18802)
 - A New Approach to Finite Element Simulations of General Relativity(https://www-users.cse.umn.edu/~arnold/papers/QuennevilleThesis.pdf)
@@ -114,7 +114,7 @@ General Relativity (https://conservancy.umn.edu/server/api/core/bitstreams/3e4f1
 - Generating Initial Data in General Relativity using
 Adaptive Finite Element Methods (https://arxiv.org/pdf/0801.3142)
 
-**Cellular Automata**: Explored as an approach for modeling spacetime.
+**Cellular Automata**
 
  - A New Kind of Science. (https://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088)
  - CELLULAR AUTOMATA THEORY AND PHYSICS (https://arxiv.org/pdf/physics/9907013)
@@ -122,7 +122,7 @@ Adaptive Finite Element Methods (https://arxiv.org/pdf/0801.3142)
  - SPECIAL RELATIVITY DERIVED FROM CELLULAR AUTOMATA THEORY: The origin of the universal speed limit (https://arxiv.org/pdf/physics/9902034)
  - Doubly-Special Relativity from Quantum Cellular Automata (https://arxiv.org/pdf/1310.6760)
 
-**Symbolic Computation**: Uses algebraic methods to solve Einstein’s equations.
+**Symbolic Computation**
 
  - Finite element approximation of the Einstein tensor (https://arxiv.org/pdf/1703.09738)
  - Computational General Relativity in the Wolfram Language using Gravitas I: Symbolic and Analytic Computation (https://arxiv.org/pdf/2308.07508)
