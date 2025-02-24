@@ -97,23 +97,19 @@ Before developing this project, a review of existing computational models for si
 
 **Numerical Relativity**: Uses numerical methods to solve Einstein’s Field Equations, particularly for dynamic systems like black hole mergers.
 
- - Pretorius, F. (2005). "Evolution of Binary Black Hole Spacetimes." Physical Review Letters, 95(12), 121101. DOI: 10.1103/PhysRevLett.95.121101.
+ - Evolution of Binary Black Hole Spacetimes (https://arxiv.org/pdf/gr-qc/0507014)
 
 **Finite Element Methods (FEM)**: Allows solving EFE with complex boundary conditions and geometries.
 
-- Anderson, M., & Sussman, G. J. (2008). "Finite Element Methods for the Einstein Field Equations." Journal of Computational Physics, 227(15), 7537-7554. DOI: 10.1016/j.jcp.2008.04.020.
-
-**Lattice Gauge Theory**: Applied in quantum field theory and quantum gravity.
-
- - M. A. M. K. (1999). "Lattice Gauge Theory and Quantum Gravity." Journal of High Energy Physics, 1999(10), 001. DOI: 10.1088/1126-6708/1999/10/001.
+- Finite Element Methods for the Einstein Field Equations. (https://arxiv.org/pdf/2310.18802)
 
 **Cellular Automata**: Explored as an approach for modeling spacetime.
 
- - Wolfram, S. (2002). "A New Kind of Science." Wolfram Media.
+ - A New Kind of Science. (https://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088)
 
 **Symbolic Computation**: Uses algebraic methods to solve Einstein’s equations.
 
- - D. J. M. (2004). "Symbolic Computation in General Relativity: A New Approach." Computer Physics Communications, 157(1), 1-15. DOI: 10.1016/j.cpc.2003.11.002.
+ - Finite element approximation of the Einstein tensor (https://arxiv.org/pdf/1703.09738)
 
 None of these approaches use a fully energy-driven, finite state automaton model similar to Entropic Engine.
 
