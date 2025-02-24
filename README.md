@@ -121,6 +121,8 @@ Adaptive Finite Element Methods (https://arxiv.org/pdf/0801.3142)
  - Photonic cellular automaton simulation of relativistic quantum fields: Observation of Zitterbewegung (https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033136)
  - SPECIAL RELATIVITY DERIVED FROM CELLULAR AUTOMATA THEORY: The origin of the universal speed limit (https://arxiv.org/pdf/physics/9902034)
  - Doubly-Special Relativity from Quantum Cellular Automata (https://arxiv.org/pdf/1310.6760)
+ - Exploring Rulial Space: The Case of Turing Machines (https://arxiv.org/pdf/2101.10907)
+ - The Problem of Distributed Consensus: A Survey (https://arxiv.org/pdf/2106.13591)
 
 **Symbolic Computation**
 
