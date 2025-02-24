@@ -77,6 +77,22 @@ Each celestial body follows these principles:
 
 ---
 
+## Modeling Approach Overview
+
+A modeling approach is crucial for understanding behavior because it transforms complex system dynamics into a clear, structured blueprint that makes it much easier to predict and analyze each step.
+
+We use the following:
+
+- **2‑State, 2‑Color Turing Machines**:  Like a minimalist recipe using just two ingredients that still creates a gourmet dish,
+they show how minimal components can lead to universal and unpredictable computation.
+- **Petri Nets**: Imagine a city map where tokens (cars) navigate intersections (transitions) across streets (places). These provide a clear, visual picture of state changes and concurrent processes.
+- **Lambda Calculus**: Think of it as a script editor refining each line of a screenplay to ensure the story unfolds flawlessly:
+It abstracts computations into elegant, symbolic reductions that help verify correctness step by step.
+
+Together, these tools offer a rich, multi-perspective toolkit for modeling and analyzing the behavior of our Turing machine.
+
+---
+
 ## Proving the Correctness of Entropic Engine
 Imagine our simulation as a feature film about a Turing machine. We ensure its accuracy by rigorously verifying our Turing machine’s behavior using formal methods. In this process, we rely on three key concepts that work together:
 
