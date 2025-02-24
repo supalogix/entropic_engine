@@ -32,6 +32,9 @@ In the context of Stephen Wolfram's theory, which suggests that physical phenome
 
 In this framework, the concept of an "object" becomes less rigid, as it is defined by its current state and the rules governing its interactions rather than by inherent properties. This fluidity challenges traditional notions of conservation laws, which rely on the stability and continuity of objects in space and time. If objects can transform or disappear, it becomes difficult to maintain fixed conservation principles, such as conservation of mass or energy, in the same way we understand them in classical physics.
 
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" alt="Animated GIF">
+</p>
 
 To address this issue, we turn to Noether’s theorem, which establishes that conservation laws in inertial frames are a direct consequence of the underlying symmetries in the Lagrangian formulation of a system. The key idea is that if a system’s Lagrangian remains invariant under certain continuous transformations (such as time or space translations), then a corresponding quantity (like energy or momentum) is conserved.
 
