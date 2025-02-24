@@ -106,10 +106,12 @@ Before developing this project, a review of existing computational models for si
 **Cellular Automata**: Explored as an approach for modeling spacetime.
 
  - A New Kind of Science. (https://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088)
+ - CELLULAR AUTOMATA THEORY AND PHYSICS (https://arxiv.org/pdf/physics/9907013)
 
 **Symbolic Computation**: Uses algebraic methods to solve Einstein’s equations.
 
  - Finite element approximation of the Einstein tensor (https://arxiv.org/pdf/1703.09738)
+ - Computational General Relativity in the Wolfram Language using Gravitas I: Symbolic and Analytic Computation (https://arxiv.org/pdf/2308.07508)
 
 None of these approaches use a fully energy-driven, finite state automaton model similar to Entropic Engine.
 
