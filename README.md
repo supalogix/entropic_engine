@@ -97,21 +97,38 @@ Before developing this project, a review of existing computational models for si
 
 **Numerical Relativity**: Uses numerical methods to solve Einstein’s Field Equations, particularly for dynamic systems like black hole mergers.
 
+ - Introduction to Numerical Relativity (https://arxiv.org/pdf/2008.12931)
+ - Numerical Relativity as a New Tool for Fundamental Cosmology (https://arxiv.org/pdf/2201.03752)
  - Evolution of Binary Black Hole Spacetimes (https://arxiv.org/pdf/gr-qc/0507014)
+ - Numerical Relativity with Arbitrary Precision Arithmetic: Applications to Gravitational Collapse (https://arxiv.org/pdf/1803.00858)
+ - Part III Gravitational Waves and Numerical Relativity(https://www.damtp.cam.ac.uk/user/us248/Lectures/Notes/gwnr.pdf)
 
 **Finite Element Methods (FEM)**: Allows solving EFE with complex boundary conditions and geometries.
 
 - Finite Element Methods for the Einstein Field Equations. (https://arxiv.org/pdf/2310.18802)
+- A New Approach to Finite Element Simulations of General Relativity(https://www-users.cse.umn.edu/~arnold/papers/QuennevilleThesis.pdf)
+- Binary black hole simulation with an adaptive finite element method II: Application
+of local discontinuous Galerkin method to Einstein equations (https://arxiv.org/pdf/1805.10640)
+- A New Approach to Finite Element Simulations of
+General Relativity (https://conservancy.umn.edu/server/api/core/bitstreams/3e4f1370-dc55-4690-83d5-017c7a48380e/content)
+- Generating Initial Data in General Relativity using
+Adaptive Finite Element Methods (https://arxiv.org/pdf/0801.3142)
 
 **Cellular Automata**: Explored as an approach for modeling spacetime.
 
  - A New Kind of Science. (https://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088)
  - CELLULAR AUTOMATA THEORY AND PHYSICS (https://arxiv.org/pdf/physics/9907013)
+ - Photonic cellular automaton simulation of relativistic quantum fields: Observation of Zitterbewegung (https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033136)
+ - SPECIAL RELATIVITY DERIVED FROM CELLULAR AUTOMATA THEORY: The origin of the universal speed limit (https://arxiv.org/pdf/physics/9902034)
+ - Doubly-Special Relativity from Quantum Cellular Automata (https://arxiv.org/pdf/1310.6760)
 
 **Symbolic Computation**: Uses algebraic methods to solve Einstein’s equations.
 
  - Finite element approximation of the Einstein tensor (https://arxiv.org/pdf/1703.09738)
  - Computational General Relativity in the Wolfram Language using Gravitas I: Symbolic and Analytic Computation (https://arxiv.org/pdf/2308.07508)
+ - Symbolic Computation of Dynamics on Smooth Manifolds (https://hybrid-robotics.berkeley.edu/publications/WAFR2016_SymDynamics_Manifolds.pdf)
+ - Symbolic tensor calculus on manifolds: a SageMath implementation (https://arxiv.org/pdf/1804.07346)
+ - Symbolic Calculus for Value Boundary Problems on Manifolds and Edges (https://d-nb.info/1218377879/34) 
 
 None of these approaches use a fully energy-driven, finite state automaton model similar to Entropic Engine.
 
