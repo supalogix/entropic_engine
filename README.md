@@ -210,7 +210,7 @@ Before developing this project, a review of existing computational models for si
  - [Numerical Relativity as a New Tool for Fundamental Cosmology](https://arxiv.org/pdf/2201.03752)
  - [Evolution of Binary Black Hole Spacetimes](https://arxiv.org/pdf/gr-qc/0507014)
  - [Numerical Relativity with Arbitrary Precision Arithmetic: Applications to Gravitational Collapse](https://arxiv.org/pdf/1803.00858)
- - Part III Gravitational Waves and Numerical Relativity(https://www.damtp.cam.ac.uk/user/us248/Lectures/Notes/gwnr.pdf)
+ - [Part III Gravitational Waves and Numerical Relativity](https://www.damtp.cam.ac.uk/user/us248/Lectures/Notes/gwnr.pdf)
 
 **Finite Element Methods (FEM)**
 
