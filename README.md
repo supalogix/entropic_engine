@@ -194,40 +194,36 @@ Before developing this project, a review of existing computational models for si
 
 **Numerical Methods**
 
- - Introduction to Numerical Relativity (https://arxiv.org/pdf/2008.12931)
- - Numerical Relativity as a New Tool for Fundamental Cosmology (https://arxiv.org/pdf/2201.03752)
- - Evolution of Binary Black Hole Spacetimes (https://arxiv.org/pdf/gr-qc/0507014)
- - Numerical Relativity with Arbitrary Precision Arithmetic: Applications to Gravitational Collapse (https://arxiv.org/pdf/1803.00858)
+ - [Introduction to Numerical Relativity](https://arxiv.org/pdf/2008.12931)
+ - [Numerical Relativity as a New Tool for Fundamental Cosmology](https://arxiv.org/pdf/2201.03752)
+ - [Evolution of Binary Black Hole Spacetimes](https://arxiv.org/pdf/gr-qc/0507014)
+ - [Numerical Relativity with Arbitrary Precision Arithmetic: Applications to Gravitational Collapse](https://arxiv.org/pdf/1803.00858)
  - Part III Gravitational Waves and Numerical Relativity(https://www.damtp.cam.ac.uk/user/us248/Lectures/Notes/gwnr.pdf)
 
 **Finite Element Methods (FEM)**
 
-- Finite Element Methods for the Einstein Field Equations. (https://arxiv.org/pdf/2310.18802)
-- A New Approach to Finite Element Simulations of General Relativity(https://www-users.cse.umn.edu/~arnold/papers/QuennevilleThesis.pdf)
-- Binary black hole simulation with an adaptive finite element method II: Application
-of local discontinuous Galerkin method to Einstein equations (https://arxiv.org/pdf/1805.10640)
-- A New Approach to Finite Element Simulations of
-General Relativity (https://conservancy.umn.edu/server/api/core/bitstreams/3e4f1370-dc55-4690-83d5-017c7a48380e/content)
-- Generating Initial Data in General Relativity using
-Adaptive Finite Element Methods (https://arxiv.org/pdf/0801.3142)
+- [Finite Element Methods for the Einstein Field Equations](https://arxiv.org/pdf/2310.18802)
+- [A New Approach to Finite Element Simulations of General Relativity](https://www-users.cse.umn.edu/~arnold/papers/QuennevilleThesis.pdf)
+- [Binary black hole simulation with an adaptive finite element method II: Application of local discontinuous Galerkin method to Einstein equations](https://arxiv.org/pdf/1805.10640)
+- [A New Approach to Finite Element Simulations of General Relativity](https://conservancy.umn.edu/server/api/core/bitstreams/3e4f1370-dc55-4690-83d5-017c7a48380e/content)
+- [Generating Initial Data in General Relativity using Adaptive Finite Element Methods](https://arxiv.org/pdf/0801.3142)
 
 **Cellular Automata**
 
- - A New Kind of Science. (https://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088)
- - CELLULAR AUTOMATA THEORY AND PHYSICS (https://arxiv.org/pdf/physics/9907013)
- - Photonic cellular automaton simulation of relativistic quantum fields: Observation of Zitterbewegung (https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033136)
- - SPECIAL RELATIVITY DERIVED FROM CELLULAR AUTOMATA THEORY: The origin of the universal speed limit (https://arxiv.org/pdf/physics/9902034)
- - Doubly-Special Relativity from Quantum Cellular Automata (https://arxiv.org/pdf/1310.6760)
- - Exploring Rulial Space: The Case of Turing Machines (https://arxiv.org/pdf/2101.10907)
- - The Problem of Distributed Consensus: A Survey (https://arxiv.org/pdf/2106.13591)
+ - [CELLULAR AUTOMATA THEORY AND PHYSICS](https://arxiv.org/pdf/physics/9907013)
+ - [Photonic cellular automaton simulation of relativistic quantum fields: Observation of Zitterbewegung](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033136)
+ - [SPECIAL RELATIVITY DERIVED FROM CELLULAR AUTOMATA THEORY: The origin of the universal speed limit](https://arxiv.org/pdf/physics/9902034)
+ - [Doubly-Special Relativity from Quantum Cellular Automata](https://arxiv.org/pdf/1310.6760)
+ - [Exploring Rulial Space: The Case of Turing Machines](https://arxiv.org/pdf/2101.10907)
+ - [The Problem of Distributed Consensus: A Survey](https://arxiv.org/pdf/2106.13591)
 
 **Symbolic Computation**
 
- - Finite element approximation of the Einstein tensor (https://arxiv.org/pdf/1703.09738)
- - Computational General Relativity in the Wolfram Language using Gravitas I: Symbolic and Analytic Computation (https://arxiv.org/pdf/2308.07508)
- - Symbolic Computation of Dynamics on Smooth Manifolds (https://hybrid-robotics.berkeley.edu/publications/WAFR2016_SymDynamics_Manifolds.pdf)
- - Symbolic tensor calculus on manifolds: a SageMath implementation (https://arxiv.org/pdf/1804.07346)
- - Symbolic Calculus for Value Boundary Problems on Manifolds and Edges (https://d-nb.info/1218377879/34) 
+ - [Finite element approximation of the Einstein tensor](https://arxiv.org/pdf/1703.09738)
+ - [Computational General Relativity in the Wolfram Language using Gravitas I: Symbolic and Analytic Computation](https://arxiv.org/pdf/2308.07508)
+ - [Symbolic Computation of Dynamics on Smooth Manifolds](https://hybrid-robotics.berkeley.edu/publications/WAFR2016_SymDynamics_Manifolds.pdf)
+ - [Symbolic tensor calculus on manifolds: a SageMath implementation](https://arxiv.org/pdf/1804.07346)
+ - [Symbolic Calculus for Value Boundary Problems on Manifolds and Edges](https://d-nb.info/1218377879/34) 
 
 None of these approaches use a fully energy-driven, finite state automaton model similar to Entropic Engine.
 
@@ -238,8 +234,8 @@ None of these approaches use a fully energy-driven, finite state automaton model
 - **The Rebound Project**: A special thanks to the Rebound team for their incredible effort in developing and maintaining an efficient N-body simulation framework, which forms a crucial part of our work (https://rebound.readthedocs.io/en/latest/).
 - **DeepSeek**: For their invaluable insights into assembly optimization, helping us refine our approach to performance improvements in C (https://github.com/deepseek-ai).
 - **Stephen Wolfram** and his book **A New Kind of Science**: His work on cellular automata and computational approaches to physics has been a major inspiration for this project.
-- **Matt Strassler** and his website [profmattstrassler.com](https://profmattstrassler.com/) for his notion of "rate of flipping" as a mechanical effect rather than a mysterious field property. His analogy of a perpetual light in a mirrored box helped shape our understanding of how the rate of flipping relates to mass and acceleration effects. While this analogy has its limitations, it provides an intuitive way to think about how repeated interactions can lead to mass-like behavior in a confined system.
-- **Dr. Jonathan Devor** for helping us understand the limitations of cellular automata with regard to the conservation of energy.
+- **Matt Strassler** and his [website](https://profmattstrassler.com/) for his notion of "rate of flipping" as a mechanical effect rather than a mysterious field property. His analogy of a perpetual light in a mirrored box helped shape our understanding of how the rate of flipping relates to mass and acceleration effects. While this analogy has its limitations, it provides an intuitive way to think about how repeated interactions can lead to mass-like behavior in a confined system.
+- **Dr. Jonathan Devor** for helping us understand the limitations of cellular automata with regard to the energy conservation.
 - **Dr. Don V. Black** for his patient guidance.
 
 
