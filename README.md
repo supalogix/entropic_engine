@@ -52,33 +52,43 @@ Thus, by synthesizing these perspectives, we resolve the apparent paradox: the c
 
 ---
 
-## Turing Machine-Based Simulation of a Solar System
+## Turing Machine-Based Simulation of a Solar System with Voxelized Manifold Perspectives
 
-We model solar system dynamics by representing celestial bodies as Turing machines interacting on a shared tape—encoding where orbital parameters and gravitational interactions are modeled as state transitions rather than explicit force calculations.
- 
-Although our current focus is on the solar system, our approach can be generalized to broader astrophysical scenarios in the future.
+We model solar system dynamics by representing celestial bodies as Turing machines interacting on a shared tape. In addition to modeling orbital parameters and gravitational interactions as state transitions, each Turing machine maintains a record of a discretized manifold.
+
+This manifold is composed of voxels—akin to pixels in an image that represent a continuous smooth surface.
+
+Each celestial body records its manifold from its own perspective, and these voxelized state space vectors can be used to cross verify that the perspectives of different worldlines are mutually compatible.
+
+Furthermore, each Turing machine is modeled as being in its own independent inertial frame of reference. Because of this, the momentum is zero by definition. Technically, only when there is a collision of some kind is the momentum non-zero. This is when the worldline is not in an inertial reference frame. Once the system has equalized, the worldline will return to a state of being in an inertial frame of reference. Additionally, worldlines can appear and disappear through the processes of energy combining and decomposing. However, these dynamics are not accounted for in the current state of the system and may be introduced in the future. For the time being, we assume that there are no collisions within the system.
 
 Each celestial body follows these principles:
 
 1. **Defining Celestial Bodies as Turing Machines**
    - Each body maintains a state with position, momentum, total energy, and a vector clock to track causal consistency.
+   - In addition, each Turing machine records a voxelized representation of the surrounding state space—a discretized manifold where each voxel carries vector data describing local curvature and metric information from that body's perspective.
    - Motion is governed by energy conservation and Hamiltonian constraints.
 
 2. **Using the Shared Tape to Simulate Gravity**
    - The Sun writes gravitational potential data, which planets read to determine acceleration.
    - Planets adjust kinetic and potential energy to ensure conservation, producing natural orbits.
+   - Gravitational interactions are also interpreted through the voxelized manifolds: each body’s recorded state space offers a local mapping of gravitational influences that can be cross-checked for consistency across different perspectives.
 
 3. **Orbital Motion Without Explicit Time**
    - Instead of discrete time steps, planets check for valid gravitational interactions before updating states.
    - Each body processes updates only when causally consistent based on light-speed constraints.
+   - The continuous manifold record enables bodies to reconcile their state transitions by comparing the voxel vector maps across worldlines.
 
 4. **Multi-Body Interactions**
    - Planets read gravitational influence from others, leading to emergent orbital perturbations.
    - Close encounters result in natural momentum exchanges, preserving angular momentum.
+   - Each Turing machine’s perspective of the manifold allows for cross verification: the relative voxel vectors help ensure that despite different local views, all bodies agree on the overarching causal structure of the simulated space.
 
 5. **Incorporating Relativistic Effects**
    - Light-speed delays ensure gravitational influence propagates at finite speed.
    - Time dilation emerges naturally as fast-moving bodies experience fewer state transitions.
+   - The voxelized manifold provides a flexible and localized method to capture relativistic effects by allowing each body to record and compare the curvature of spacetime as seen from its own reference frame.
+
 
 ---
 
