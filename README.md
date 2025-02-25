@@ -115,55 +115,48 @@ Together these tools form a comprehensive verification framework.
 By combining these methods, we rigorously ensure that our Turing Machine accurately reflects the intended physics behavior.
 
 ---
-
 ## Least Action-Based Turing Machine with Rebound and Energy–Spacetime Dynamics
 
-We are using **Rebound** to simulate a Turing machine whose state transitions are determined not by an explicit “tape” but by energy configurations and worldline interactions. In this framework, every computational element evolves by selecting its optimal future based on Hamiltonian constraints, ensured through Lagrangian formalism, and more fundamentally through the conservation and transformation of energy.
+We use [Rebound](https://rebound.readthedocs.io/en/latest/) to simulate a Turing machine whose state transitions are governed not by an explicit “tape” but by energy configurations and worldline interactions. In this framework, every computational element evolves by selecting its optimal future based on Hamiltonian constraints, ensured through Lagrangian formalism, and underpinned by the conservation and transformation of energy. Importantly, the formulation of energy and momentum is frame-dependent, while the underlying physical laws remain invariant.
 
 ### Energy as the Basis for Computation
 
-Rather than directly stating “this takes X time,” our system relies on the fact that energy is the sole currency of dynamics. In physics, the evolution of a system is governed by the principle of least action, meaning that the energy distribution (and its subsequent shifts) defines both spatial and temporal behavior. For example:
+Our system relies on energy as the fundamental currency of dynamics. The evolution of a system adheres to the principle of least action, meaning that the distribution and transformation of energy defines both spatial and temporal behavior. For instance:
 
-- **Energy Localization and Rest Mass:**  The concept is analogous to energy being "trapped" between mirrors. This confined energy, representing what we call potential energy, becomes the particle’s rest energy. In the special case of massive particles, this is given by  `E = m c^2`  However, the complete energy–momentum relation is  `E^2 = (m c^2)^2 + (p c)^2`,  where for massless particles (with m = 0), the energy is simply  `E = p c`.  Even when the energy is confined, it must propagate, if not in space then along the time axis. In an inertial frame (one in which an object either remains at rest or moves at a constant velocity unless acted upon), this propagation is natural because an object at rest (relative to that frame) still has momentum if it is moving through time.
+- **Energy Localization, Rest Frames, and Potential Energy:**  In an object's rest frame (i.e. an inertial frame where the object is stationary) the object has zero momentum, and hence zero kinetic energy. In this frame, the Lagrangian simplifies to  `L = -V`  which reflects that the object's energy is entirely potential energy (up to an arbitrary constant). Note that zero momentum does not imply that the potential energy is at a maximum; it merely indicates that there is no kinetic energy contribution in that particular frame.
 
-- **Momentum in an Inertial Frame:**  Momentum is defined as  `p = m v`.  Even though the energy is localized within the "mirrors" (i.e., a confined region), its inevitable propagation along the time axis is equivalent to the object moving at the speed of light in time. This is why, in any inertial frame, a particle’s four-velocity is given by  `u^mu = (c, 0, 0, 0)`,  ensuring that the particle’s rest energy  `E = m c^2`  (and more generally the full energy `E^2 = (m c^2)^2 + (p c)^2`) contributes consistently to the stress-energy tensor that curves spacetime:  `G_munu = (8*pi*G)/(c^4) * T_munu`, where `T_munu = rho * u_mu * u_nu`.
+- **Momentum and Frame Dependence:**  While momentum is defined as `p = m v` in any inertial frame, its numerical value depends on the observer’s state of motion. In an object’s rest frame, the momentum is zero, but in another frame where the object is observed in motion, kinetic energy becomes nonzero. Despite these differences, transformation laws (Galilean in classical mechanics or Lorentz in relativity) guarantee that the equations of motion derived from the Hamiltonian or Lagrangian remain valid in all inertial frames. Thus, although different observers assign different values to kinetic and sometimes even potential energy, the overall dynamics of the system are preserved.
 
-- **Conversion of Energy Forms:**  Just as gravitational potential energy converts into kinetic energy (via  `PE = mgh`  and  `KE = 1/2 * m * v^2`),  the "rate of flipping" or the zigzagging of energy within its confined space not only defines the particle’s inertial properties but also how it navigates through spacetime. The more rapid this intrinsic motion (or "flip"), the more localized the energy appears, a classical intuition behind the wave/particle duality.
+- **Energy Confinement and Propagation:**  Analogous to energy being "trapped" between mirrors, the confined energy representing potential energy can be viewed as the particle’s rest energy. For massive particles, this is expressed as `E = m c^2`, while the complete energy–momentum relation is  `E^2 = (m c^2)^2 + (p c)^2`.  Even when energy is confined, it must propagate and if cannot not in space, then it must along the time axis. In any inertial frame, a particle’s four-velocity is given by `u^mu = (c, 0, 0, 0)` in its rest frame, ensuring that its rest energy contributes consistently to the stress-energy tensor that curves spacetime.
 
 ### Time Emergence from Energy Dynamics
 
-Because energy is the only fundamental entity we manipulate, "time" emerges from the patterns of energy movement. A particle at rest in space still "moves" through time because the trapped energy is forced along the only available dimension.
+Since energy is the sole fundamental entity we manipulate, time emerges from the patterns of energy movement. Even a particle at rest in space "moves" through time because its energy, though entirely potential in that frame, is forced along the time axis:
 
-- The **Lagrangian principle** dictates that every system follows the path of least resistance; in our case the geodesic that maximizes proper time.
-- With no spatial direction available (for a particle at rest), the energy’s propagation is directed solely upward through time. Think of it as a perpetual light in a mirrored box: it must travel somewhere, so if spatial propagation is blocked, it continues along the time axis.
+- The **Lagrangian principle** dictates that every system follows the path of least resistance, and in our case, it is the geodesic that maximizes proper time.
+- With no spatial propagation available (as in a rest frame), the energy’s inherent motion manifests along the time axis, much like light perpetually bouncing within a mirrored box.
 
 ### Numerical Simulation with Rebound and Symplectic Integration
 
-Rebound, while originally built for Newtonian N-body simulations, offers a robust platform for calculating complex dynamical systems using [symplectic integrators](https://rebound.readthedocs.io/en/latest/integrators/). These integrators preserve the underlying Hamiltonian structure and are ideal for long-term simulations where conservation of energy is paramount. 
+Rebound, originally designed for Newtonian N-body simulations, provides a robust platform for modeling complex dynamical systems with [symplectic integrators](https://rebound.readthedocs.io/en/latest/integrators/). These integrators maintain the Hamiltonian structure and are ideal for long-term simulations where energy conservation is paramount. Our implementation leverages Rebound to:
 
-
-
-Our implementation leverages Rebound to:
-
-- **Compute Geodesics:**  By using a symplectic integrator, we can numerically compute the geodesic—the path of least action—that each automaton (or computational element) must follow in order to conserve energy.
-
-- **Simulate Energy–State Transitions:**  Each automaton "computes" its possible futures based solely on how its energy is arranged and redistributed, without self-referential timing. This ensures that time dilation and message delay emerge naturally from the energy interactions rather than being arbitrarily imposed.
-
-- **Maintain Conservation Laws:**  Since every automaton follows the same physical rules (derived from the energy-stress tensor and Lagrangian formalism), the overall system guarantees energy conservation from all perspectives. Rebound's integrators make it feasible to perform these Hamiltonian and Lagrangian calculations in a specific inertial frame using optimized numerical methods.
+- **Compute Geodesics:**  Using a symplectic integrator, we compute the geodesic (i.e. the path of least action that each computational element must follow to conserve energy across different frames).
+  
+- **Simulate Energy–State Transitions:**  Each automaton "computes" its future states solely based on the arrangement and redistribution of its energy. By relying on energy dynamics rather than an imposed clock, effects such as time dilation and message delay naturally emerge from the interactions of energy.
+  
+- **Maintain Conservation Laws Across Frames:**  Every automaton follows the same physical rules, ensuring consistency through the energy-stress tensor and Lagrangian formalism. Although kinetic and potential energy values differ between inertial frames, transformation laws ensure that the overall dynamics remain invariant. Rebound’s integrators enable precise Hamiltonian and Lagrangian calculations within a specified inertial frame using optimized numerical methods.
 
 ### Bridging Computation and Fundamental Physics
 
-In essence, our approach transforms the classical ideas of potential and kinetic energy, inertial frames, and geodesic motion into a computational paradigm. The state transitions of our Turing machine are dictated by:
+Our approach transforms classical concepts (i.e. potential and kinetic energy, inertial frames, and geodesic motion) into a computational paradigm where the state transitions of a Turing machine are determined by:
 
-- **Energy Confinement and Release:**  In the same way that a falling mass converts potential energy to kinetic energy, our system uses energy redistribution to signal state changes.
+- **Energy Confinement and Redistribution:**  Similar to how a falling mass converts potential energy into kinetic energy, our system employs energy redistribution to signal state changes.
+  
+- **Natural Time Evolution:**  Even when energy is entirely potential in the rest frame (i.e. zero kinetic energy), its forced propagation along the time axis provides a natural "tick" for the computational process.
+  
+- **Optimal Path Selection:**  Following the principle of least action, each automaton selects the path (or state update) that minimizes the action, akin to how particles in a gravitational field follow geodesics.
 
-- **Natural Time Evolution:**  Even if energy is confined spatially (as in a mirrored box), it must propagate in time, providing a natural "tick" for the computational process.
-
-- **Optimal Path Selection:**  Following the principle of least action, each automaton selects the path (or state update) that minimizes the action, mirroring how particles in a gravitational field follow geodesics.
-
-By grounding our simulation in these principles, we avoid the need for explicit time delays (which would be self-referential and problematic in a Turing/Godel framework) and instead allow time to emerge from the fundamental interactions of energy in spacetime.
-
-Leveraging tools like Rebound and its symplectic integrators provides a practical headstart even when extending them beyond their originally intended purpose.
+By grounding our simulation in these principles, we avoid the need for explicit time delays (which would be self-referential and problematic in a Turing/Godel framework). Instead, time and state transitions emerge from the fundamental interactions of energy within spacetime. Leveraging tools like Rebound and its symplectic integrators offers a practical means to extend these physical principles into a computational framework.
 
 ---
 
