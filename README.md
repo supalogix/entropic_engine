@@ -22,7 +22,7 @@ In our model, the entire universe is reduced to energy interactions:
 
 ## Theoretical Foundations
 
-One proposal, originally suggested by Stephen Wolfram, envisions physics as emerging from a sufficiently complex cellular automaton. In this model, each iteration represents a fundamental tick of time, and movement is naturally capped at one cell per iteration. While this inherently sets a maximum speed, it also implies that the traditional concept of an "object" becomes fuzzy (i.e. cells that can morph, merge, or vanish over time) which makes it challenging to directly apply conventional conservation laws.
+Stephen Wolfram envisions physics as emerging from a sufficiently complex cellular automaton. In this model, each iteration represents a fundamental tick of time, and movement is naturally capped at one cell per iteration. While this inherently sets a maximum speed, it also implies that the traditional concept of an "object" becomes fuzzy (i.e. cells that can morph, merge, or vanish over time) which makes it challenging to directly apply conventional conservation laws.
 
 In the context of Stephen Wolfram's theory, which suggests that physical phenomena can be modeled using cellular automata, the idea of objects changing form or vanishing refers to the nature of entities in a discrete, grid-like universe.
 
