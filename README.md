@@ -54,7 +54,7 @@ Thus, by synthesizing these perspectives, we resolve the apparent paradox: the c
 
 ## Turing Machine-Based Simulation of a Solar System with Voxelized Manifold Perspectives
 
-We model solar system dynamics by representing celestial bodies as Turing machines interacting on a shared tape. In addition to modeling orbital parameters and gravitational interactions as state transitions, each Turing machine maintains a record of a discretized manifold.
+We model solar system dynamics by representing worldlines as Turing machines interacting on a shared tape. In addition to modeling orbital parameters and gravitational interactions as state transitions, each Turing machine maintains a record of a discretized manifold.
 
 This manifold is composed of voxels which is analogous to pixels in an image that represent a continuous smooth surface.
 
@@ -69,7 +69,7 @@ Each celestial body follows these principles:
 1. **Defining Celestial Bodies as Turing Machines**
    - Each body maintains a state with position, total energy, the Lagrangian (which inherently captures the gravitational and momentum information), and a vector clock to track causal consistency.
    - In addition, each Turing machine records a voxelized representation of the surrounding state space—a discretized manifold where each voxel carries vector data describing local curvature and metric information from that body's perspective.
-   - Motion is governed by energy conservation and Hamiltonian constraints.
+   - Motion is governed by Lagrangian and Hamiltonian constraints.
 
 2. **Agent-Based Simulation of Gravitational Interactions**
    - Gravitational influence is entirely decentralized: each Turing machine computes its local gravitational interactions based on the voxelized state data recorded by neighboring agents.
@@ -96,7 +96,7 @@ Each celestial body follows these principles:
 
 ## Least Action-Based Turing Machine with Rebound and Energy–Spacetime Dynamics
 
-We use [Rebound](https://rebound.readthedocs.io/en/latest/) to simulate a Turing machine whose state transitions are governed not by an explicit “tape” but by energy configurations and worldline interactions. In this framework, every computational element evolves by selecting its optimal future based on Hamiltonian constraints, ensured through Lagrangian formalism, and underpinned by the conservation and transformation of energy. Importantly, the formulation of energy and momentum is frame-dependent, while the underlying physical laws remain invariant.
+We use [Rebound](https://rebound.readthedocs.io/en/latest/) to simulate a Turing machine whose state transitions are governed by energy configurations and worldline interactions. In this framework, every computational element evolves by selecting its optimal future based on Hamiltonian constraints, ensured through Lagrangian formalism, and underpinned by the conservation and transformation of energy. Importantly, the formulation of energy and momentum is frame-dependent, while the underlying physical laws remain invariant.
 
 ### Energy as the Basis for Computation
 
