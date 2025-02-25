@@ -115,19 +115,20 @@ Together these tools form a comprehensive verification framework.
 By combining these methods, we rigorously ensure that our Turing Machine accurately reflects the intended physics behavior.
 
 ---
+
 ## Least Action-Based Turing Machine with Rebound and Energy–Spacetime Dynamics
 
 We use [Rebound](https://rebound.readthedocs.io/en/latest/) to simulate a Turing machine whose state transitions are governed not by an explicit “tape” but by energy configurations and worldline interactions. In this framework, every computational element evolves by selecting its optimal future based on Hamiltonian constraints, ensured through Lagrangian formalism, and underpinned by the conservation and transformation of energy. Importantly, the formulation of energy and momentum is frame-dependent, while the underlying physical laws remain invariant.
 
 ### Energy as the Basis for Computation
 
-Our system relies on energy as the fundamental currency of dynamics. The evolution of a system adheres to the principle of least action, meaning that the distribution and transformation of energy defines both spatial and temporal behavior. For instance:
+Our system relies on energy as the fundamental currency of dynamics. The evolution of a system adheres to the principle of least action, meaning that the distribution and transformation of energy define both spatial and temporal behavior. However, defining a Lagrangian for this framework presents unique challenges, as the system does not involve conventional spatial derivatives but instead requires a regression-based approach to approximate changes in state.
 
-- **Energy Localization, Rest Frames, and Potential Energy:**  In an object's rest frame (i.e. an inertial frame where the object is stationary) the object has zero momentum, and hence zero kinetic energy. In this frame, the Lagrangian simplifies to  `L = -V`  which reflects that the object's energy is entirely potential energy (up to an arbitrary constant). Note that zero momentum does not imply that the potential energy is at a maximum; it merely indicates that there is no kinetic energy contribution in that particular frame.
+- **Energy Localization, Rest Frames, and Potential Energy:**  In an object's rest frame (i.e., an inertial frame where the object is stationary), the object has zero momentum and hence zero kinetic energy. In this frame, the Lagrangian simplifies to `L = -V`, reflecting that the object's energy is entirely potential energy (up to an arbitrary constant). However, because each computational cell effectively behaves as its own inertial reference frame, its energy must be analyzed within a localized transformation context rather than a global framework.
 
-- **Momentum and Frame Dependence:**  While momentum is defined as `p = m v` in any inertial frame, its numerical value depends on the observer’s state of motion. In an object’s rest frame, the momentum is zero, but in another frame where the object is observed in motion, kinetic energy becomes nonzero. Despite these differences, transformation laws (Galilean in classical mechanics or Lorentz in relativity) guarantee that the equations of motion derived from the Hamiltonian or Lagrangian remain valid in all inertial frames. Thus, although different observers assign different values to kinetic and sometimes even potential energy, the overall dynamics of the system are preserved.
+- **Momentum and Frame Dependence:**  While momentum is defined as `p = m v` in any inertial frame, its numerical value depends on the observer’s state of motion. Although different observers assign different values to kinetic and potential energy, the overall dynamics of the system are preserved due to Noether’s theorem, which states that conservation laws emerge from the fundamental symmetries of the Lagrangian. This means that even as each computational cell evolves according to localized energy exchanges, the total behavior remains consistent across different frames.
 
-- **Energy Confinement and Propagation:**  Analogous to energy being "trapped" between mirrors, the confined energy representing potential energy can be viewed as the particle’s rest energy. For massive particles, this is expressed as `E = m c^2`, while the complete energy–momentum relation is  `E^2 = (m c^2)^2 + (p c)^2`.  Even when energy is confined, it must propagate and if cannot not in space, then it must along the time axis. In any inertial frame, a particle’s four-velocity is given by `u^mu = (c, 0, 0, 0)` in its rest frame, ensuring that its rest energy contributes consistently to the stress-energy tensor that curves spacetime.
+- **Energy Confinement and Propagation:**  Analogous to energy being "trapped" between mirrors, the confined energy representing potential energy can be viewed as the particle’s rest energy. For massive particles, this is expressed as `E = m c^2`, while the complete energy–momentum relation is `E^2 = (m c^2)^2 + (p c)^2`. Since every computational element follows energy conservation principles, its interactions must be consistent with both local symmetries and global constraints. The challenge is ensuring that numerical methods respect these conservation laws across all frames.
 
 ### Time Emergence from Energy Dynamics
 
@@ -136,27 +137,28 @@ Since energy is the sole fundamental entity we manipulate, time emerges from the
 - The **Lagrangian principle** dictates that every system follows the path of least resistance, and in our case, it is the geodesic that maximizes proper time.
 - With no spatial propagation available (as in a rest frame), the energy’s inherent motion manifests along the time axis, much like light perpetually bouncing within a mirrored box.
 
+The problem arises in that a formal Lagrangian framework for this system must approximate derivatives in a discretized space without relying on explicit functional forms. A regression-based approach to estimating state transitions would allow us to infer the least-action path dynamically, using statistical methods rather than conventional differentiation.
+
 ### Numerical Simulation with Rebound and Symplectic Integration
 
-Rebound, originally designed for Newtonian N-body simulations, provides a robust platform for modeling complex dynamical systems with [symplectic integrators](https://rebound.readthedocs.io/en/latest/integrators/). These integrators maintain the Hamiltonian structure and are ideal for long-term simulations where energy conservation is paramount. Our implementation leverages Rebound to:
+Rebound, originally designed for Newtonian N-body simulations, provides a robust platform for modeling complex dynamical systems with [symplectic integrators](https://rebound.readthedocs.io/en/latest/integrators/). These integrators preserve the **symplectic structure of Hamiltonian systems**, a crucial geometric property of phase space that ensures long-term energy conservation. Since we do not explicitly define a derivative-based Lagrangian, the preservation of phase space volume is essential for maintaining the integrity of our computational model.
 
-- **Compute Geodesics:**  Using a symplectic integrator, we compute the geodesic (i.e. the path of least action that each computational element must follow to conserve energy across different frames).
-  
-- **Simulate Energy–State Transitions:**  Each automaton "computes" its future states solely based on the arrangement and redistribution of its energy. By relying on energy dynamics rather than an imposed clock, effects such as time dilation and message delay naturally emerge from the interactions of energy.
-  
-- **Maintain Conservation Laws Across Frames:**  Every automaton follows the same physical rules, ensuring consistency through the energy-stress tensor and Lagrangian formalism. Although kinetic and potential energy values differ between inertial frames, transformation laws ensure that the overall dynamics remain invariant. Rebound’s integrators enable precise Hamiltonian and Lagrangian calculations within a specified inertial frame using optimized numerical methods.
+Rebound is chosen as a solution because:
+
+- **It computes geodesics using symplectic integration:** Since each computational element follows a geodesic constrained by energy conservation, the integrator ensures that the system evolves in a way that minimizes the action while preserving fundamental symmetries.
+- **It enables state transitions based on energy movement rather than an imposed clock:** The emergent behavior of time in our system aligns with how symplectic integration respects the Hamiltonian evolution.
+- **It ensures conservation laws across different inertial frames:** Symplectic methods inherently conserve quantities like total energy and angular momentum, making them ideal for handling transformations between different reference frames within the computational system.
 
 ### Bridging Computation and Fundamental Physics
 
-Our approach transforms classical concepts (i.e. potential and kinetic energy, inertial frames, and geodesic motion) into a computational paradigm where the state transitions of a Turing machine are determined by:
+Our approach transforms classical concepts (i.e., potential and kinetic energy, inertial frames, and geodesic motion) into a computational paradigm where the state transitions of a Turing machine are determined by:
 
 - **Energy Confinement and Redistribution:**  Similar to how a falling mass converts potential energy into kinetic energy, our system employs energy redistribution to signal state changes.
-  
-- **Natural Time Evolution:**  Even when energy is entirely potential in the rest frame (i.e. zero kinetic energy), its forced propagation along the time axis provides a natural "tick" for the computational process.
-  
+- **Natural Time Evolution:**  Even when energy is entirely potential in the rest frame (i.e., zero kinetic energy), its forced propagation along the time axis provides a natural "tick" for the computational process.
 - **Optimal Path Selection:**  Following the principle of least action, each automaton selects the path (or state update) that minimizes the action, akin to how particles in a gravitational field follow geodesics.
 
-By grounding our simulation in these principles, we avoid the need for explicit time delays (which would be self-referential and problematic in a Turing/Godel framework). Instead, time and state transitions emerge from the fundamental interactions of energy within spacetime. Leveraging tools like Rebound and its symplectic integrators offers a practical means to extend these physical principles into a computational framework.
+By grounding our simulation in these principles, we avoid the need for explicit time delays (which would be self-referential and problematic in a Turing/Gödel framework). Instead, time and state transitions emerge from the fundamental interactions of energy within spacetime. Leveraging tools like Rebound and its symplectic integrators offers a practical means to extend these physical principles into a computational framework while preserving the fundamental geometric constraints imposed by energy conservation and symmetry laws.
+
 
 ---
 
@@ -237,6 +239,7 @@ None of these approaches use a fully energy-driven, finite state automaton model
 - **DeepSeek**: For their invaluable insights into assembly optimization, helping us refine our approach to performance improvements in C (https://github.com/deepseek-ai).
 - **Stephen Wolfram** and his book **A New Kind of Science**: His work on cellular automata and computational approaches to physics has been a major inspiration for this project.
 - **Matt Strassler** and his website [profmattstrassler.com](https://profmattstrassler.com/) for his notion of "rate of flipping" as a mechanical effect rather than a mysterious field property. His analogy of a perpetual light in a mirrored box helped shape our understanding of how the rate of flipping relates to mass and acceleration effects. While this analogy has its limitations, it provides an intuitive way to think about how repeated interactions can lead to mass-like behavior in a confined system.
+- **Dr. Jonathan Devor** for helping us understand the limitations of cellular automata with regard to the conservation of energy.
 - **Dr. Don V. Black** for his patient guidance.
 
 
