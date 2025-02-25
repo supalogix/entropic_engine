@@ -56,7 +56,7 @@ Thus, by synthesizing these perspectives, we resolve the apparent paradox: the c
 
 We model solar system dynamics by representing celestial bodies as Turing machines interacting on a shared tape. In addition to modeling orbital parameters and gravitational interactions as state transitions, each Turing machine maintains a record of a discretized manifold.
 
-This manifold is composed of voxels—akin to pixels in an image that represent a continuous smooth surface.
+This manifold is composed of voxels which are analogous to pixels in an image that represent a continuous smooth surface.
 
 Each celestial body records its manifold from its own perspective, and these voxelized state space vectors can be used to cross verify that the perspectives of different worldlines are mutually compatible.
 
