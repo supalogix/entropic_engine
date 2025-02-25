@@ -93,39 +93,6 @@ Each celestial body follows these principles:
 
 ---
 
-## Modeling Approach Overview
-
-A modeling approach is crucial for understanding behavior because it transforms complex system dynamics into a clear, structured blueprint that makes it much easier to predict and analyze each step.
-
-We use the following:
-
-- **2‑State, 2‑Color Turing Machines**:  Like a minimalist recipe using just two ingredients that still creates a gourmet dish,
-they show how minimal components can lead to universal and unpredictable computation.
-- **Petri Nets**: Imagine a city map where tokens (cars) navigate intersections (transitions) across streets (places). These provide a clear, visual picture of state changes and concurrent processes.
-- **Lambda Calculus**: Think of it as a script editor refining each line of a screenplay to ensure the story unfolds flawlessly:
-It abstracts computations into elegant, symbolic reductions that help verify correctness step by step.
-
-Together, these tools offer a rich, multi-perspective toolkit for modeling and analyzing the behavior of our Turing machine.
-
----
-
-## Proving the Correctness of Entropic Engine
-Imagine our simulation as a feature film about a Turing machine. We ensure its accuracy by rigorously verifying our Turing machine’s behavior using formal methods. In this process, we rely on three key concepts that work together:
-
-- **Theorem Prover (Coq)**: Coq is a theorem prover that mathematically checks the internal logic of our simulation. It proves that every step of the Turing machine’s operation follows from a set of rules. Think of it as a script editor who carefully reviews every line of a screenplay to ensure that every plot detail is logically sound.
-
-- **Formal Specification Language (TLA+)**: TLA+ is a formal specification language that lets us describe the system’s behavior, including all its state transitions and invariants, in a precise mathematical way. It is similar to a detailed storyboard that lays out each scene in a film, ensuring that every transition from one state to the next is consistent and follows the intended plan.
-
-- **Modal Logic (NuSVM 2)**: NuSVM 2 uses modal logic to verify the temporal aspects of our simulation. Modal logic extends classical logic to reason about time, possibility, and necessity. Imagine this tool as the film’s timekeeper and editor, ensuring that the timing, pacing, and sequence of events maintain a coherent and accurate flow over the entire runtime.
-
-Together these tools form a comprehensive verification framework. 
-- The theorem prover (Coq) confirms that the internal logic is sound. 
-- The formal specification language (TLA+) provides a clear blueprint of the system’s state transitions. 
-- Modal logic (NuSVM 2) guarantees that the behavior over time remains consistent. 
-
-By combining these methods, we rigorously ensure that our Turing Machine accurately reflects the intended physics behavior.
-
----
 
 ## Least Action-Based Turing Machine with Rebound and Energy–Spacetime Dynamics
 
@@ -196,6 +163,40 @@ For targeted performance improvements, we integrate inline assembly into critica
 - **SSE/AVX for vectorized arithmetic**
 - **Hand-tuned assembly routines for memory management**
 - **Fast lookup tables for computationally expensive operations**
+
+---
+
+## Modeling Approach Overview
+
+A modeling approach is crucial for understanding behavior because it transforms complex system dynamics into a clear, structured blueprint that makes it much easier to predict and analyze each step.
+
+We use the following:
+
+- **2‑State, 2‑Color Turing Machines**:  Like a minimalist recipe using just two ingredients that still creates a gourmet dish,
+they show how minimal components can lead to universal and unpredictable computation.
+- **Petri Nets**: Imagine a city map where tokens (cars) navigate intersections (transitions) across streets (places). These provide a clear, visual picture of state changes and concurrent processes.
+- **Lambda Calculus**: Think of it as a script editor refining each line of a screenplay to ensure the story unfolds flawlessly:
+It abstracts computations into elegant, symbolic reductions that help verify correctness step by step.
+
+Together, these tools offer a rich, multi-perspective toolkit for modeling and analyzing the behavior of our Turing machine.
+
+---
+
+## Proving the Correctness of Entropic Engine
+Imagine our simulation as a feature film about a Turing machine. We ensure its accuracy by rigorously verifying our Turing machine’s behavior using formal methods. In this process, we rely on three key concepts that work together:
+
+- **Theorem Prover (Coq)**: Coq is a theorem prover that mathematically checks the internal logic of our simulation. It proves that every step of the Turing machine’s operation follows from a set of rules. Think of it as a script editor who carefully reviews every line of a screenplay to ensure that every plot detail is logically sound.
+
+- **Formal Specification Language (TLA+)**: TLA+ is a formal specification language that lets us describe the system’s behavior, including all its state transitions and invariants, in a precise mathematical way. It is similar to a detailed storyboard that lays out each scene in a film, ensuring that every transition from one state to the next is consistent and follows the intended plan.
+
+- **Modal Logic (NuSVM 2)**: NuSVM 2 uses modal logic to verify the temporal aspects of our simulation. Modal logic extends classical logic to reason about time, possibility, and necessity. Imagine this tool as the film’s timekeeper and editor, ensuring that the timing, pacing, and sequence of events maintain a coherent and accurate flow over the entire runtime.
+
+Together these tools form a comprehensive verification framework. 
+- The theorem prover (Coq) confirms that the internal logic is sound. 
+- The formal specification language (TLA+) provides a clear blueprint of the system’s state transitions. 
+- Modal logic (NuSVM 2) guarantees that the behavior over time remains consistent. 
+
+By combining these methods, we rigorously ensure that our Turing Machine accurately reflects the intended physics behavior.
 
 ---
 
