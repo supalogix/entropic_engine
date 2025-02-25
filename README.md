@@ -116,10 +116,6 @@ By combining these methods, we rigorously ensure that our Turing Machine accurat
 
 ---
 
-Below is the revised Markdown version that incorporates the full energy–momentum relation, which applies to both massive and massless particles:
-
----
-
 ## Least Action-Based Turing Machine with Rebound and Energy–Spacetime Dynamics
 
 We are using **Rebound** to simulate a Turing machine whose state transitions are determined not by an explicit “tape” but by energy configurations and worldline interactions. In this framework, every computational element evolves by selecting its optimal future based on Hamiltonian constraints, ensured through Lagrangian formalism, and more fundamentally through the conservation and transformation of energy.
@@ -130,46 +126,28 @@ Rather than directly stating “this takes X time,” our system relies on the f
 
 - **Energy Localization and Rest Mass:**  
   The concept is analogous to energy being "trapped" between mirrors. This confined energy, representing what we call potential energy, becomes the particle’s rest energy. In the special case of massive particles, this is given by  
-  $$
-  E = mc^2.
-  $$
+  `E = m c^2`  
   However, the complete energy–momentum relation is  
-  $$
-  E^2 = (mc^2)^2 + (pc)^2,
-  $$
-  where for massless particles (with \(m=0\)), the energy is  
-  $$
-  E = pc.
-  $$
+  `E^2 = (m c^2)^2 + (p c)^2`,  
+  where for massless particles (with m = 0), the energy is simply  
+  `E = p c`.  
   Even when the energy is confined, it must propagate, if not in space then along the time axis. In an inertial frame (one in which an object either remains at rest or moves at a constant velocity unless acted upon), this propagation is natural because an object at rest (relative to that frame) still has momentum if it is moving through time.
 
 - **Momentum in an Inertial Frame:**  
   Momentum is defined as  
-  $$
-  p = mv.
-  $$
+  `p = m v`.  
   Even though the energy is localized within the "mirrors" (i.e., a confined region), its inevitable propagation along the time axis is equivalent to the object moving at the speed of light in time. This is why, in any inertial frame, a particle’s four-velocity is given by  
-  $$
-  u^\mu = \left(c,\,0,\,0,\,0\right),
-  $$
+  `u^mu = (c, 0, 0, 0)`,  
   ensuring that the particle’s rest energy  
-  $$
-  E = mc^2
-  $$
-  (and more generally the full energy \($E^2 = (mc^2)^2 + (pc)^2$\)) contributes consistently to the stress-energy tensor that curves spacetime:  
-  $$
-  G_{\mu\nu} = \frac{8\pi G}{c^4} \, T_{\mu\nu} \quad,\quad T_{\mu\nu} = \rho\, u_\mu u_\nu.
-  $$
+  `E = m c^2`  
+  (and more generally the full energy `E^2 = (m c^2)^2 + (p c)^2`) contributes consistently to the stress-energy tensor that curves spacetime:  
+  `G_munu = (8*pi*G)/(c^4) * T_munu   ,   T_munu = rho * u_mu * u_nu`.
 
 - **Conversion of Energy Forms:**  
   Just as gravitational potential energy converts into kinetic energy (via  
-  $$
-  PE = mgh
-  $$
+  `PE = mgh`  
   and  
-  $$
-  KE = \frac{1}{2}mv^2),
-  $$
+  `KE = 1/2 * m * v^2`),  
   the "rate of flipping" or the zigzagging of energy within its confined space not only defines the particle’s inertial properties but also how it navigates through spacetime. The more rapid this intrinsic motion (or "flip"), the more localized the energy appears, a classical intuition behind the wave/particle duality.
 
 ### Time Emergence from Energy Dynamics
@@ -184,7 +162,7 @@ Because energy is the only fundamental entity we manipulate, "time" emerges from
 Rebound, while originally built for Newtonian N-body simulations, offers a robust platform for calculating complex dynamical systems using symplectic integrators. These integrators preserve the underlying Hamiltonian structure and are ideal for long-term simulations where conservation of energy is paramount. Our implementation leverages Rebound to:
 
 - **Compute Geodesics:**  
-  By using a symplectic integrator, we can numerically compute the geodesic, the path of least action, that each automaton (or computational element) must follow in order to conserve energy.
+  By using a symplectic integrator, we can numerically compute the geodesic—the path of least action—that each automaton (or computational element) must follow in order to conserve energy.
 
 - **Simulate Energy–State Transitions:**  
   Each automaton "computes" its possible futures based solely on how its energy is arranged and redistributed, without self-referential timing. This ensures that time dilation and message delay emerge naturally from the energy interactions rather than being arbitrarily imposed.
