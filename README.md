@@ -46,7 +46,7 @@ In our approach, instead of applying conservation laws to entire objects, we app
 - **Einstein’s View**: Time and space interact dynamically with mass and energy.  
 - **Cellular Automaton View**: The cells don’t change, but the **energy inside them moves around**, creating the illusion of motion.  
 
-This is where the **rate of flipping** comes in. Imagine light bouncing inside a mirrored box—what we call mass might just be **trapped energy**, constantly redistributing.  
+This is where [rate of flipping](https://profmattstrassler.com/articles-and-posts/particle-physics-basics/the-known-apparently-elementary-particles/the-known-particles-if-the-higgs-field-were-zero/) comes in. Imagine light bouncing inside a mirrored box, and what we call mass might just be **trapped energy** that is constantly redistributing.  
 
 ### Resolving the Conservation Paradox  
 Even though objects seem to appear and disappear, **energy is never lost**—it just shifts configurations. The second law of thermodynamics keeps everything in check, ensuring that what looks like randomness is actually governed by deeper principles.  
