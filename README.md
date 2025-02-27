@@ -119,26 +119,31 @@ Since energy is the sole fundamental entity we manipulate, time emerges from the
 
 The problem arises in that a formal Lagrangian framework for this system must approximate derivatives in a discretized space without relying on explicit functional forms. A regression-based approach to estimating state transitions would allow us to infer the least-action path dynamically, using statistical methods rather than conventional differentiation.
 
-### Numerical Simulation with Rebound and Symplectic Integration
+## **Numerical Simulation with Rebound and Symplectic Integration**  
 
-Rebound, originally designed for Newtonian N-body simulations, provides a robust platform for modeling complex dynamical systems with [symplectic integrators](https://rebound.readthedocs.io/en/latest/integrators/). These integrators preserve the **symplectic structure of Hamiltonian systems**, a crucial geometric property of phase space that ensures long-term energy conservation. Since we do not explicitly define a derivative-based Lagrangian, the preservation of phase space volume is essential for maintaining the integrity of our computational model.
+Rebound, originally designed for N-body simulations, provides a robust platform for modeling complex **energy-driven systems** using symplectic integration. While symplectic methods are traditionally applied to Hamiltonian systems, they are particularly useful in our framework because they **preserve conservation laws and maintain numerical stability over long-term simulations**. 
+
+Since our approach does not explicitly define a force-based Lagrangian or use direct time derivatives, it is essential that **energy evolution remains consistent across state transitions**. Symplectic methods help ensure that the redistribution of energy respects fundamental symmetries while preventing numerical drift in long-running simulations.
 
 Rebound is chosen as a solution because:
 
-- **It computes geodesics using symplectic integration:** Since each computational element follows a geodesic constrained by energy conservation, the integrator ensures that the system evolves in a way that minimizes the action while preserving fundamental symmetries.
-- **It enables state transitions based on energy movement rather than an imposed clock:** The emergent behavior of time in our system aligns with how symplectic integration respects the Hamiltonian evolution.
-- **It ensures conservation laws across different inertial frames:** Symplectic methods inherently conserve quantities like total energy and angular momentum, making them ideal for handling transformations between different reference frames within the computational system.
+- **It preserves conservation principles**: Since each computational element follows a trajectory dictated by energy redistribution, symplectic integration ensures that the system evolves in a way that maintains total energy consistency over time.  
 
-### Bridging Computation and Fundamental Physics
+- **It enables state transitions based on energy movement rather than an imposed clock**: The emergent behavior of time in our system aligns with how symplectic integration ensures proper evolution without requiring an external time step to dictate motion.  
 
-Our approach transforms classical concepts (i.e., potential and kinetic energy, inertial frames, and geodesic motion) into a computational paradigm where the state transitions of a Turing machine are determined by:
+- **It maintains numerical integrity across different inertial frames**: Symplectic methods inherently preserve global quantities such as total energy and angular momentum, making them ideal for handling transformations between different reference frames within our computational system.  
 
-- **Energy Confinement and Redistribution:**  Similar to how a falling mass converts potential energy into kinetic energy, our system employs energy redistribution to signal state changes.
-- **Natural Time Evolution:**  Even when energy is entirely potential in the rest frame (i.e., zero kinetic energy), its forced propagation along the time axis provides a natural "tick" for the computational process.
-- **Optimal Path Selection:**  Following the principle of least action, each automaton selects the path (or state update) that minimizes the action, akin to how particles in a gravitational field follow geodesics.
+---
 
-By grounding our simulation in these principles, we avoid the need for explicit time delays (which would be self-referential and problematic in a Turing/Gödel framework). Instead, time and state transitions emerge from the fundamental interactions of energy within spacetime. Leveraging tools like Rebound and its symplectic integrators offers a practical means to extend these physical principles into a computational framework while preserving the fundamental geometric constraints imposed by energy conservation and symmetry laws.
+## **Bridging Computation and Fundamental Physics**  
 
+Our approach transforms classical physics concepts—such as energy conservation, inertial frames, and geodesic motion—into a computational paradigm where the state transitions of a Turing machine are determined purely by **energy redistribution**.  
+
+- **Energy Confinement and Redistribution:** Much like how a falling object converts potential energy into kinetic energy, our system represents computational state changes through the movement of energy rather than externally imposed force-driven transitions.  
+- **Emergent Time Evolution:** Even in a system where energy remains entirely potential in a given frame, its forced movement along the time axis provides a natural "tick" for computation, ensuring that state transitions occur in a self-consistent way.  
+- **Path Optimization through Least Action:** Each computational element selects a transition path that minimizes resistance, akin to how physical systems evolve along geodesic paths in spacetime without requiring external force-driven equations.  
+
+By grounding our simulation in these principles, we **eliminate the need for explicit time delays or externally defined force laws**. Instead, **motion, time, and state transitions emerge naturally** as a consequence of energy redistribution. Leveraging tools like Rebound and its symplectic integrators allows us to extend these fundamental principles into a computational framework while preserving the underlying conservation laws and symmetry constraints that guide all physical systems.
 
 ---
 
