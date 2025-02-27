@@ -20,38 +20,42 @@ In our model, the entire universe is reduced to energy interactions:
 
 ---
 
-## Theoretical Foundations
+## Theoretical Foundations  
 
-Stephen Wolfram envisions physics as emerging from a sufficiently complex cellular automaton. In this model, each iteration represents a fundamental tick of time, and movement is naturally capped at one cell per iteration. While this inherently sets a maximum speed, it also implies that the traditional concept of an "object" becomes fuzzy (i.e. cells that can morph, merge, or vanish over time) which makes it challenging to directly apply conventional conservation laws.
+### Stephen Wolfram’s Cellular Automaton Model  
+Stephen Wolfram suggests that physics could emerge from a **complex cellular automaton**, where each iteration represents a fundamental tick of time. In this setup, movement is naturally limited to one cell per iteration, meaning there’s a built-in speed limit. But the real challenge isn’t just speed—it’s that objects don’t stay fixed. They can **morph, merge, or vanish**, making it tricky to apply traditional conservation laws.  
 
-In the context of Stephen Wolfram's theory, which suggests that physical phenomena can be modeled using cellular automata, the idea of objects changing form or vanishing refers to the nature of entities in a discrete, grid-like universe.
+### What Happens to Objects?  
+In a **discrete, grid-like universe**, objects aren’t permanent. They change form, shift states, or disappear based on local rules:  
+- **Changing Form**: Objects evolve as they interact with neighboring cells. They might rearrange, change properties, or transform based on predetermined rules.  
+- **Vanishing**: Objects don’t truly disappear; instead, their configuration shifts. Energy may redistribute in a way that makes them unrecognizable, creating the illusion of destruction.  
 
-- **Changing Form**: This implies that the properties or states of objects can evolve based on the rules of the cellular automaton. For example, an object might rearrange its structure, change its color, or alter its position based on interactions with neighboring cells or following specific rules. This dynamic nature means that what defines an object can be fluid, as it can take on different appearances or behaviors over time.
-
-- **Vanishing**: This suggests that objects can cease to exist within the system, potentially due to the rules of the automaton leading to their destruction or transformation into energy or other states. In a cellular automaton, the local rules can lead to situations where a configuration of cells that represents an object might evolve into a state that no longer has the same structure or properties, effectively making that object "vanish."
-
-In this framework, the concept of an "object" becomes less rigid, as it is defined by its current state and the rules governing its interactions rather than by inherent properties. This fluidity challenges traditional notions of conservation laws, which rely on the stability and continuity of objects in space and time. If objects can transform or disappear, it becomes difficult to maintain fixed conservation principles, such as conservation of mass or energy, in the same way we understand them in classical physics.
+Think of it like pixels on a screen. A shape might vanish, but the pixels are still there, just displaying something else.  
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" alt="Animated GIF">
-</p>
+</p>  
 
-To address this issue, we turn to Noether’s theorem, which establishes that conservation laws in inertial frames are a direct consequence of the underlying symmetries in the Lagrangian formulation of a system. The key idea is that if a system’s Lagrangian remains invariant under certain continuous transformations (such as time or space translations), then a corresponding quantity (like energy or momentum) is conserved.
+### Noether’s Theorem & Conservation Laws  
+Conservation laws, as we know them, rely on stable, continuous objects. But what if objects aren’t well-defined? **Noether’s theorem** tells us that conservation laws come from underlying symmetries. If a system behaves the same over time, energy is conserved. If it behaves the same across space, momentum is conserved.  
 
-Our approach attempts to reconcile these two viewpoints by treating each cell in the automaton as if it were its own inertial reference frame. By doing so, we aim to apply Noether’s theorem on a granular scale. This framework suggests that even though objects might not be well-defined in the conventional sense within a cellular automaton, the fundamental symmetries—and hence the conservation laws—can still manifest at the cellular level.
+In our approach, instead of applying conservation laws to entire objects, we apply them **at the cellular level**. Each cell acts as its **own reference frame**, ensuring that even if objects shift or disappear, fundamental symmetries remain intact.  
 
-This dynamic view of energy distribution resonates with a broader historical evolution in our understanding of time and space. To Newton, time was simply a parameter, a fixed backdrop against which events unfolded; space was similarly unchanging. Einstein, however, brought these dimensions to life: time and space dance with mass and energy and form a fabric that is intrinsically linked to the physical processes of the universe. By analogy, our approach to the cellular automaton is to treat each cell as if it were its own inertial reference frame. Here, mass-energy is initially treated as a fixed parameter (i.e. a constant element within each cell) but it is brought to life through what Dr. Matt Strassler calls the "rate of flipping." As an analogy, think of a perpetual light bouncing inside a mirrored box. This shapes our understanding of how the rate at which cells “flip” can give rise to mechanical effects such as mass and acceleration. In essence, mass is just the energy trapped in a mirrored box, ready to be redistributed.
+### A New Perspective on Space, Time, and Energy  
+- **Newton’s View**: Time is a passive backdrop, where things happen.  
+- **Einstein’s View**: Time and space interact dynamically with mass and energy.  
+- **Cellular Automaton View**: The cells don’t change, but the **energy inside them moves around**, creating the illusion of motion.  
 
-In our unified view of emergent physics, the universe is modeled as a vast cellular automaton: a grid of immutable cells that never change their inherent form. What appears as change is, in fact, the dynamic redistribution of energy among these cells.
+This is where the **rate of flipping** comes in. Imagine light bouncing inside a mirrored box—what we call mass might just be **trapped energy**, constantly redistributing.  
 
-In Stephen Wolfram’s vision, the grid evolves so that objects seem to change form or even vanish as cells interact. However, the deeper truth is that the cells themselves remain constant; they only appear to transform because the energy within them shifts according to fixed rules. This energy transfer, governed by the second law of thermodynamics, is what gives rise to the fluid behavior of observable phenomena.
+### Resolving the Conservation Paradox  
+Even though objects seem to appear and disappear, **energy is never lost**—it just shifts configurations. The second law of thermodynamics keeps everything in check, ensuring that what looks like randomness is actually governed by deeper principles.  
 
-Similarly, an object’s apparent disappearance is not due to the cell ceasing to exist. Instead, visibility is an emergent property: an object is visible only when a cell contains energy in the appropriate configuration. When a cell seems to “lose” an object, it is merely in a low-energy state that fails to manifest that object. The cell remains, faithfully obeying conservation laws, while the energy rearrangement creates the illusion of vanishing.
+### Final Thoughts  
+If we rethink physics as a cellular automaton, conservation laws don’t vanish. No, they just apply at a smaller, more fundamental scale. Objects may not be permanent, but the **rules governing their interactions remain unchanged**.  
 
-Thus, by synthesizing these perspectives, we resolve the apparent paradox: the cellular automaton’s fundamental rules ensure that energy is conserved at every level.
-
-For a deeper explanation of our theoretical approach, see:
- - **[Emergent Dynamics: A Kinematic-First Approach](./scientific_background/EMERGENT_DYNAMICS.md)**
+For a deeper dive, check out:  
+- **[Emergent Dynamics: A Kinematic-First Approach](./scientific_background/EMERGENT_DYNAMICS.md)**
 ---
 
 ## Turing Machine-Based Simulation of a Solar System with Voxelized Manifold Perspectives
@@ -95,55 +99,66 @@ Each celestial body follows these principles:
 
 ---
 
+## Least Action-Based Turing Machine with Rebound and Energy–Spacetime Dynamics  
 
-## Least Action-Based Turing Machine with Rebound and Energy–Spacetime Dynamics
-
-We use [Rebound](https://rebound.readthedocs.io/en/latest/) to simulate a Turing machine whose state transitions are governed by energy configurations and worldline interactions. In this framework, every computational element evolves by selecting its optimal future based on Hamiltonian constraints, ensured through Lagrangian formalism, and underpinned by the conservation and transformation of energy. Importantly, the formulation of energy and momentum is frame-dependent, while the underlying physical laws remain invariant.
-
-### Energy as the Basis for Computation
-
-Our system relies on energy as the fundamental currency of dynamics. The evolution of a system adheres to the principle of least action, meaning that the distribution and transformation of energy define both spatial and temporal behavior. However, defining a Lagrangian for this framework presents unique challenges, as the system does not involve conventional spatial derivatives but instead requires a regression-based approach to approximate changes in state.
-
-- **Energy Localization, Rest Frames, and Potential Energy:**  In an object's rest frame (i.e., an inertial frame where the object is stationary), the object has zero momentum and hence zero kinetic energy. In this frame, the Lagrangian simplifies to `L = -V`, reflecting that the object's energy is entirely potential energy (up to an arbitrary constant). However, because each computational cell effectively behaves as its own inertial reference frame, its energy must be analyzed within a localized transformation context rather than a global framework.
-
-- **Momentum and Frame Dependence:**  While momentum is defined as `p = m v` in any inertial frame, its numerical value depends on the observer’s state of motion. Although different observers assign different values to kinetic and potential energy, the overall dynamics of the system are preserved due to Noether’s theorem, which states that conservation laws emerge from the fundamental symmetries of the Lagrangian. This means that even as each computational cell evolves according to localized energy exchanges, the total behavior remains consistent across different frames.
-
-- **Energy Confinement and Propagation:**  Analogous to energy being "trapped" between mirrors, the confined energy representing potential energy can be viewed as the particle’s rest energy. For massive particles, this is expressed as `E = m c^2`, while the complete energy–momentum relation is `E^2 = (m c^2)^2 + (p c)^2`. Since every computational element follows energy conservation principles, its interactions must be consistent with both local symmetries and global constraints. The challenge is ensuring that numerical methods respect these conservation laws across all frames.
-
-### Time Emergence from Energy Dynamics
-
-Since energy is the sole fundamental entity we manipulate, time emerges from the patterns of energy movement. Even a particle at rest in space "moves" through time because its energy, though entirely potential in that frame, is forced along the time axis:
-
-- The **Lagrangian principle** dictates that every system follows the path of least resistance, and in our case, it is the geodesic that maximizes proper time.
-- With no spatial propagation available (as in a rest frame), the energy’s inherent motion manifests along the time axis, much like light perpetually bouncing within a mirrored box.
-
-The problem arises in that a formal Lagrangian framework for this system must approximate derivatives in a discretized space without relying on explicit functional forms. A regression-based approach to estimating state transitions would allow us to infer the least-action path dynamically, using statistical methods rather than conventional differentiation.
-
-## **Numerical Simulation with Rebound and Symplectic Integration**  
-
-Rebound, originally designed for N-body simulations, provides a robust platform for modeling complex **energy-driven systems** using symplectic integration. While symplectic methods are traditionally applied to Hamiltonian systems, they are particularly useful in our framework because they **preserve conservation laws and maintain numerical stability over long-term simulations**. 
-
-Since our approach does not explicitly define a force-based Lagrangian or use direct time derivatives, it is essential that **energy evolution remains consistent across state transitions**. Symplectic methods help ensure that the redistribution of energy respects fundamental symmetries while preventing numerical drift in long-running simulations.
-
-Rebound is chosen as a solution because:
-
-- **It preserves conservation principles**: Since each computational element follows a trajectory dictated by energy redistribution, symplectic integration ensures that the system evolves in a way that maintains total energy consistency over time.  
-
-- **It enables state transitions based on energy movement rather than an imposed clock**: The emergent behavior of time in our system aligns with how symplectic integration ensures proper evolution without requiring an external time step to dictate motion.  
-
-- **It maintains numerical integrity across different inertial frames**: Symplectic methods inherently preserve global quantities such as total energy and angular momentum, making them ideal for handling transformations between different reference frames within our computational system.  
+We use [Rebound](https://rebound.readthedocs.io/en/latest/) to simulate a Turing machine where state transitions are governed by energy configurations and interactions along worldlines. Instead of predefined steps, each computational element **selects its optimal future** based on Hamiltonian constraints, guided by Lagrangian formalism and energy conservation. While energy and momentum are frame-dependent, the **underlying physical laws remain invariant** across different perspectives.  
 
 ---
 
-## **Bridging Computation and Fundamental Physics**  
+## Energy as the Basis for Computation  
 
-Our approach transforms classical physics concepts—such as energy conservation, inertial frames, and geodesic motion—into a computational paradigm where the state transitions of a Turing machine are determined purely by **energy redistribution**.  
+Our system treats **energy as the fundamental driver of computation**. The system evolves according to the **principle of least action**, meaning that the way energy distributes itself **determines both spatial and temporal behavior**. However, defining a Lagrangian in this framework is tricky because:  
+- It **doesn’t rely on conventional spatial derivatives**.  
+- Instead, it **requires a regression-based approach** to approximate changes in state.  
 
-- **Energy Confinement and Redistribution:** Much like how a falling object converts potential energy into kinetic energy, our system represents computational state changes through the movement of energy rather than externally imposed force-driven transitions.  
-- **Emergent Time Evolution:** Even in a system where energy remains entirely potential in a given frame, its forced movement along the time axis provides a natural "tick" for computation, ensuring that state transitions occur in a self-consistent way.  
-- **Path Optimization through Least Action:** Each computational element selects a transition path that minimizes resistance, akin to how physical systems evolve along geodesic paths in spacetime without requiring external force-driven equations.  
+### Key Principles  
 
-By grounding our simulation in these principles, we **eliminate the need for explicit time delays or externally defined force laws**. Instead, **motion, time, and state transitions emerge naturally** as a consequence of energy redistribution. Leveraging tools like Rebound and its symplectic integrators allows us to extend these fundamental principles into a computational framework while preserving the underlying conservation laws and symmetry constraints that guide all physical systems.
+- **Energy Localization and Rest Frames**  
+  - In an object’s **rest frame**, it has zero momentum and only **potential energy**.  
+  - Each computational cell acts as **its own reference frame**, so energy must be analyzed locally rather than globally.  
+
+- **Momentum and Frame Dependence**  
+  - An object’s momentum depends on the observer’s motion.  
+  - Noether’s theorem ensures that even though different observers assign different values to energy components, **the system’s total behavior remains consistent** across frames.  
+
+- **Energy Confinement and Propagation**  
+  - Energy can be thought of as **trapped between mirrors**, much like a particle’s **rest energy** (analogous to Einstein’s mass-energy relation).  
+  - The challenge is ensuring that numerical methods **respect conservation laws** across all reference frames.  
+
+---
+
+## Time Emergence from Energy Dynamics  
+
+Since energy is the **only fundamental quantity** we track, **time itself emerges** from patterns of energy movement. Even an object at rest **moves through time**, as its potential energy is still active along the time axis.  
+
+- The **Lagrangian principle** ensures that every system follows the **path of least resistance**: in this case, the geodesic that maximizes proper time.  
+- If an object **can’t move spatially**, its energy still propagates along the time axis, much like light bouncing in a mirrored box.  
+
+### The Numerical Challenge  
+- Traditional Lagrangian mechanics rely on smooth derivatives, but our system **operates in a discrete space**.  
+- Instead of conventional differentiation, a **regression-based approach** is needed to dynamically infer the least-action path.  
+
+---
+
+## Numerical Simulation with Rebound and Symplectic Integration  
+
+Rebound, originally designed for N-body simulations, is used to model complex **energy-driven systems** with symplectic integration.  
+- **Why Symplectic Methods?**  
+  - They preserve **conservation laws** and **numerical stability** over long simulations.  
+  - Since our model doesn’t define forces explicitly, we rely on symplectic methods to **maintain energy consistency across state transitions**.  
+
+### Why We Use Rebound  
+
+- **Preserves Conservation Principles**  
+  - Each computational element follows a trajectory dictated by **energy redistribution**, and symplectic integration ensures **total energy consistency** over time.  
+
+- **Allows State Transitions Without an Imposed Clock**  
+  - Time **emerges from energy flow**, and symplectic integration naturally aligns with this by **preserving system evolution without needing an external clock**.  
+
+- **Maintains Numerical Integrity Across Reference Frames**  
+  - Symplectic methods **preserve energy and angular momentum globally**, making them ideal for handling transformations between different inertial frames.  
+
+By leveraging Rebound’s symplectic integration, we ensure that **our system remains stable, energy-conserving, and dynamically emergent**, even without explicitly defining forces or a traditional time step.  
 
 ---
 
