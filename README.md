@@ -50,6 +50,8 @@ Similarly, an object’s apparent disappearance is not due to the cell ceasing t
 
 Thus, by synthesizing these perspectives, we resolve the apparent paradox: the cellular automaton’s fundamental rules ensure that energy is conserved at every level.
 
+For a deeper explanation of our theoretical approach, see:
+ - **[Emergent Dynamics: A Kinematic-First Approach](./scientific_background/EMERGENT_DYNAMICS.md)**
 ---
 
 ## Turing Machine-Based Simulation of a Solar System with Voxelized Manifold Perspectives
