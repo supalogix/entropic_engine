@@ -158,7 +158,7 @@ Rebound, originally designed for N-body simulations, is used to model complex **
 - **Maintains Numerical Integrity Across Reference Frames**  
   - Symplectic methods **preserve energy and angular momentum globally**, making them ideal for handling transformations between different inertial frames.  
 
-By leveraging Rebound’s symplectic integration, we ensure that **our system remains stable, energy-conserving, and dynamically emergent**, even without explicitly defining forces or a traditional time step.  
+By leveraging Rebound’s [symplectic integration](https://rebound.readthedocs.io/en/latest/integrators/), we ensure that **our system remains stable, energy-conserving, and dynamically emergent**, even without explicitly defining forces or a traditional time step.  
 
 ---
 
